@@ -26,7 +26,7 @@ const (
 	CLOCK_MONOTONIC = 1
 )
 
-// TODO(sgotti) for the moment just use a syscall so it'll work on all linux
+// Now: TODO(sgotti) for the moment just use a syscall so it'll work on all linux
 // architectures. It's slower than using a vdso but we don't have such performance
 // needs. Let's wait for a stdlib native monotonic clock.
 func Now() int64 {

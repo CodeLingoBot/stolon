@@ -211,7 +211,7 @@ func (cv *ClusterView) Copy() *ClusterView {
 	return &ncv
 }
 
-// Returns a sorted list of followersIDs
+// GetFollowersIDs returns a sorted list of followersIDs
 func (cv *ClusterView) GetFollowersIDs(id string) []string {
 	followersIDs := []string{}
 	for keeperID, kr := range cv.KeepersRole {
